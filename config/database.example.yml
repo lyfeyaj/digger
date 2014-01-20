@@ -1,9 +1,9 @@
 defaults: &defaults
-  adapter: sqlite3
+  adapter: postgresql
   encoding: unicode
   pool: 5
-  username: root
-  password: root
+  username: digger
+  password:
 
 development:
   <<: *defaults
