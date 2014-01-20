@@ -3,10 +3,18 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def show
     @post = Post.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.json {render post: @post}
+    end
   end
 
   def new

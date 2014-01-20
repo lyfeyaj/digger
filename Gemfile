@@ -24,7 +24,7 @@ group :development, :test do
   gem 'pry-rails'
 end
 
-#gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 1.2'
 
 # group :doc do
 #   gem 'sdoc', require: false
