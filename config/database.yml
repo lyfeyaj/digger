@@ -1,9 +1,7 @@
 defaults: &defaults
   adapter: sqlite3
-  encoding: unicode
   pool: 5
-  username: root
-  password: root
+  timeout: 5000
 
 development:
   <<: *defaults

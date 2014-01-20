@@ -1,0 +1,13 @@
+<h1>我所有的博客</h1>
+
+<% @posts.each do |post| %>
+    <div class='post article'>
+        <div class='post-title'>
+            <%= link_to post.title, post_path(post) %>
+            <%= link_to "删除#{post.title}", post_path(post), method: :delete %>
+            <%= link_to "编辑#{post.title}", edit_post_path(post) %>
+        </div>
+    </div>
+<% end %>
+
+<%= link_to '新建博客', new_post_path %>
